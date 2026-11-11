@@ -1,0 +1,12 @@
+Technique,Implementation,Library / own code,Purpose
+Adjusted market-data download,Library call with validation wrapper,yfinance / own validation,Acquire reproducible OHLCV inputs
+Technical indicators,Library,ta,"Established RSI, MACD, ATR, ADX, Bollinger and OBV calculations"
+Additional feature generation,Own functions,src/features.py,"Returns, volatility estimators, interactions and external features"
+Purged chronological splitting,Modified implementation,scikit-learn / own split logic,Prevent target overlap and temporal leakage
+Quantile clipping,Own transformer,src/preprocessing.py,Training-only extreme-value treatment
+Correlation and MI selection,Own transformer using library MI,scikit-learn / own grouping,Reduce redundant predictors inside each CV fold
+Base learner fitting,Library,scikit-learn / XGBoost,Estimate three complementary classifiers
+Blending logic,Own pipeline,scikit-learn / own OOF logic,Combine frozen base probabilities without test leakage
+Backtest and P&L metrics,Own functions,src/evaluation.py,"Apply signals, turnover costs and performance measures"
+AUC confidence intervals,Own wrapper,scikit-learn / NumPy bootstrap,Quantify finite-sample uncertainty
+
