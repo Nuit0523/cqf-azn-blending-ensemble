@@ -21,8 +21,6 @@ training folds to reduce look-ahead bias.
 |   `-- preprocessing.py
 |-- data/                       # cached adjusted OHLCV inputs
 |-- results/                    # submitted result tables
-|-- reports/
-|   `-- CQF_Final_Project_Report.pdf
 |-- requirements.txt
 |-- requirements-lock.txt
 `-- LICENSE
@@ -84,7 +82,8 @@ test observations and regenerate the tables in `results/`.
 
 ## License
 
-Code is released under the MIT License. The report and cached market data may
-be subject to separate academic, publisher, or data-provider terms.
+Code is released under the MIT License. Cached market data may be subject to
+separate data-provider terms. The submitted academic report is intentionally
+kept outside this public code repository.
 
 
